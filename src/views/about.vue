@@ -108,7 +108,7 @@
                         title: 'Socket.io',
                         info: 'Created real-time chat applications and notification systems',
                         icon: 'mdi-connection',
-                        color: '#010101'
+                        color: '#808080'
                     },
                     {
                         title: 'Database',
