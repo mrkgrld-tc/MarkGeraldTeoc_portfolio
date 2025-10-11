@@ -5,23 +5,23 @@
                 <p class="name-text">Mark Gerald Teoc</p>
                 <p class="name-subtext"><span style="color: #ff4500;">-</span>Fullstack Web Developer</p>
                 <v-divider></v-divider>
-                <div class="d-flex flex-column pt-4">
-                    <p @click="$router.push({name: 'home'})" class="nav-text">
-                        Home
-                        <v-icon class="nav-icon" v-show="$route.path == '/'">mdi-chevron-left</v-icon>
-                    </p>
-                    <p @click="$router.push({name: 'about'})" class="nav-text">
-                        About
-                        <v-icon class="nav-icon" v-show="$route.path == '/about'">mdi-chevron-left</v-icon>
-                    </p>
-                    <p @click="$router.push({name: 'projects'})" class="nav-text">
-                        Projects
-                        <v-icon class="nav-icon" v-show="$route.path == '/projects'">mdi-chevron-left</v-icon>
-                    </p>
-                    <p @click="$router.push({name: 'contact'})" class="nav-text">
-                        Contact
-                        <v-icon class="nav-icon" v-show="$route.path == '/contact'" >mdi-chevron-left</v-icon>
-                    </p>
+                <div class="d-flex gap-4 pt-2">
+                    <div class="mr-3">
+                        <v-btn variant="text" ripple="false" size="small" @click="$router.push({name: 'home'})" class="nav-text">Home</v-btn>
+                        <v-divider class="nav-icon" thickness="3" v-show="$route.path == '/'"></v-divider>
+                    </div>
+                    <div class="mr-3">
+                        <v-btn variant="text" ripple="false" size="small" @click="$router.push({name: 'about'})" class="nav-text">About</v-btn>
+                        <v-divider class="nav-icon" thickness="3" v-show="$route.path == '/about'"></v-divider>
+                    </div>
+                    <div class="mr-3">
+                        <v-btn variant="text" ripple="false" size="small" @click="$router.push({name: 'projects'})" class="nav-text">Projects</v-btn>
+                        <v-divider class="nav-icon" thickness="3" v-show="$route.path == '/projects'"></v-divider>
+                    </div>
+                    <div class="mr-3">
+                        <v-btn variant="text" ripple="false" size="small" @click="$router.push({name: 'contact'})" class="nav-text">Contact</v-btn>
+                        <v-divider class="nav-icon" thickness="3" v-show="$route.path == '/contact'"></v-divider>
+                    </div>
                 </div>
             </div>
         </v-container>
