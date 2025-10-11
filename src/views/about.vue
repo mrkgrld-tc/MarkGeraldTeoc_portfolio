@@ -17,7 +17,19 @@
             </div>
             <v-divider></v-divider>
             <p class="title-text">Skills</p>
-            <p class="subtitle">Backend</p>
+            <v-row>
+                <v-col lg="4" md="4" sm="12" cols="12" v-for="(skill, i) in skills" :key="i">
+                    <v-card class="glass-card">
+                        <div class="d-flex align-center">
+                            <v-icon :color="skill.color" size="30">{{skill.icon}}</v-icon>
+                            <v-divider class="ma-1" vertical></v-divider>
+                            <p class="subtitle-text">{{ skill.title }}</p>
+                        </div>
+                        <v-divider></v-divider>
+                        <p>Info: {{ skill.info }}</p>
+                    </v-card>
+                </v-col>
+            </v-row>
             <p class="title-text">Quests</p>
             <v-row>
                 <v-col lg="6" md="6" sm="12" cols="12" v-for="(item, i) in missions" :key="i">
@@ -55,6 +67,62 @@
     export default{
         data(){
             return{
+                skills: [
+                    {
+                        title: 'Javascript',
+                        info: 'Mastered foundational spells and combat techniques',
+                        icon: 'mdi-language-javascript',
+                        color: '#F7DF1E'
+                    },
+                    {
+                        title: 'PHP',
+                        info: 'Unlocked core backend magic and server enchantments',
+                        icon: 'mdi-language-php',
+                        color: '#6366F1'
+                    },
+                    {
+                        title: 'HTML',
+                        info: 'Learned the ancient art of web structure and layout',
+                        icon: 'mdi-language-html5',
+                        color: '#FF6B35'
+                    },
+                    {
+                        title: 'TypeScript',
+                        info: 'Mastered type-safe programming and scalable code architecture',
+                        icon: 'mdi-language-typescript',
+                        color: '#3178C6'
+                    },
+                    {
+                        title: 'Node.js',
+                        info: 'Built APIs and created a reusable library for multiple database connections',
+                        icon: 'mdi-nodejs',
+                        color: '#68A063'
+                    },
+                    {
+                        title: 'Laravel',
+                        info: 'Developed complex systems with advanced business logic',
+                        icon: 'mdi-laravel',
+                        color: '#FF2D20'
+                    },
+                    {
+                        title: 'Socket.io',
+                        info: 'Created real-time chat applications and notification systems',
+                        icon: 'mdi-connection',
+                        color: '#010101'
+                    },
+                    {
+                        title: 'Database',
+                        info: 'Optimized database design and improved performance',
+                        icon: 'mdi-database',
+                        color: '#0EA5E9'
+                    },
+                    {
+                        title: 'API Development',
+                        info: 'Developed APIs to deliver necessary data for systems',
+                        icon: 'mdi-api',
+                        color: '#14B8A6'
+                    }
+                ],
                 missions: [
                     {
                         title: 'Graduate College',
