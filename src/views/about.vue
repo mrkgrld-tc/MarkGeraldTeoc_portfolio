@@ -4,7 +4,7 @@
             <p class="title-text">Character Profile</p>
             <v-divider></v-divider>
             <div class="d-flex pa-2 align-center">
-                <v-avatar image="src\assets\profile.jpg" size="100"></v-avatar>
+                <v-avatar  image="images\profile.jpg" size="100"></v-avatar>
                 <v-divider vertical class="px-2"></v-divider>
                 <div class="pl-3 d-flex flex-column">
                     <p>Nickname: The man, the myth, the legend "Gerald"</p>
