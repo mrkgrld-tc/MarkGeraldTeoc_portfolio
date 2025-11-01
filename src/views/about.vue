@@ -4,7 +4,7 @@
             <p class="title-text">Character Profile</p>
             <v-divider></v-divider>
             <div class="d-flex pa-2 align-center">
-                <v-avatar class="rounded-lg"  image="images\profile.jpg" size="100"></v-avatar>
+                <v-avatar class="rounded-lg"  image="images\profile2.jpg" size="100"></v-avatar>
                 <v-divider vertical class="px-2"></v-divider>
                 <div class="pl-3 d-flex flex-column">
                     <p>Nickname: The man, the myth, the legend "Gerald"</p>
@@ -30,7 +30,7 @@
                     </v-card>
                 </v-col>
             </v-row>
-            <p class="title-text">Quests</p>
+            <p class="title-text">Training Arc</p>
             <v-row>
                 <v-col lg="6" md="6" sm="12" cols="12" v-for="(item, i) in missions" :key="i">
                     <v-card 
