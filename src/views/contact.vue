@@ -5,6 +5,7 @@
             <p><v-icon>mdi-facebook</v-icon> Mark Gerald Bagui. Teoc</p>
             <p><v-icon>mdi-email-outline</v-icon> teocmarkgerald@gmail.com</p>
             <p><v-icon>mdi-phone-outline</v-icon> 09663454684/09922118487</p>
+            <p><v-icon>mdi-gitlab</v-icon> mrkgrld-tc</p>
         </div>
     </v-container>
 </template>
